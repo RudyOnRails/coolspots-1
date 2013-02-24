@@ -1,7 +1,9 @@
 development:
   adapter: postgresql
   database: coolspots_dev
+  host: localhost
 
 test:
   adapter: postgresql
   database: coolspots_test
+  host: localhost
