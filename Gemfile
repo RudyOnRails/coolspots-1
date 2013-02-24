@@ -25,6 +25,5 @@ gem 'tinymce-rails'
 gem 'bootstrap_forms' # easy rails bootstrap forms
 gem "sorcery" # magical authentication 
 gem 'carrierwave' # file upload
-gem 'rmagick'
 gem 'fog'
 gem 'carousel'
