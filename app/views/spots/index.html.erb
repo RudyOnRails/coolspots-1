@@ -1,0 +1,14 @@
+<div class="span12">
+<% @spots.each do |spot| %>
+<h2><%= link_to spot.name, spot_path(spot) %></h2>
+<div class="row">
+<div class="span2">
+  <%= image_tag spot.photo_url, width: 200 %>
+</div>
+  <div class="span7">
+    
+    <%= truncate(spot.description, length: 200) %>
+  </div>
+</div>
+<% end %>
+</div>

@@ -1,0 +1,16 @@
+<div class="span12">
+<h2 style="margin-bottom: 20px"><%= @guide.name %></h2>
+
+<% @guide.spots.each do |spot| %>
+<div class="row" style="margin-bottom: 20px">
+  <div class="span2">
+  <%= image_tag spot.photo_url, width: 200 %>
+  </div>
+  <div class="span8">
+    <h3 style="line-height: 0; margin-bottom: 15px; font-size: 110%"><%= link_to spot.name, spot_path(spot) %></h3>
+    <p style="font-size: 80%">Added by <%= spot.user.username %></p>
+    <p style="font-size: 80%"><%= spot.votes.count %> votes</p>
+  </div>
+</div>
+<% end %>
+</div>

@@ -1,0 +1,67 @@
+<%= @ranges%>
+<div id="chart"></div>
+<script>
+var chart;
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo: 'chart',
+                defaultSeriesType: 'column',
+                borderWidth:0,
+                borderColor:'#ccc',
+            },
+            credits:{
+                enabled:false
+            },
+            title: {
+                text: '',
+            },
+            tooltip: {
+                borderWidth:1,
+                formatter: function() {
+                        return '<b>Range:</b><br/> '+ this.x +'<br/>'+
+                         '<b>Count:</b> '+ this.y;
+                }
+            },
+            plotOptions: {
+                series: {
+                    shadow: false,
+                    borderWidth:1,
+                    borderColor:'#c0c0c0',
+                    pointPadding:0,
+                    groupPadding:0,
+                }
+            },
+            legend: {
+                enabled:false
+            },
+            xAxis: {
+                categories: <%=raw @chart_values.keys.collect{|k| k.to_s}.to_s %>,
+                labels:{
+                    style: {
+                        fontSize:'8px',
+                        fontWeight:'normal'
+                    },
+                },
+                lineColor:'#444',
+                tickLength:5,
+                tickColor:'#ccc',
+                
+            },
+            yAxis:{
+                title:{
+                    text:''
+                },
+                maxPadding:0,
+                gridLineColor:'#e9e9e9',
+                tickWidth:1,
+                tickLength:3,
+                tickColor:'#ccc',
+                lineColor:'#ccc',
+                endOnTick:false,
+                tickInterval:50},
+            series: [{
+                data: <%= @chart_values.values.collect {|vals| vals.size }.to_s %>,
+                color: '#ccc'
+            }]
+        });
+</script>

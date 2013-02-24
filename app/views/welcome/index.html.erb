@@ -1,0 +1,15 @@
+<h2>Featured guide: <%= @guide.name %></h2>
+<div id="carousel" class="carousel slide">
+  <div class="carousel-inner">
+    <% 3.times do |time| %>
+    <div class="item <%= 'active' if time == 0 %>">
+    <%= image_tag(@guide.spots.first.photo_url) %>
+      <div class="carousel-caption">
+       <h4><%= @guide.name %></h4>
+       <p><%= @guide.description %></p>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>  
+<script>$('.carousel').carousel()</script>
