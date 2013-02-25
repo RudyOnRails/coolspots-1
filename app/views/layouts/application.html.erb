@@ -7,7 +7,7 @@
     <title><%= content_for?(:title) ? yield(:title) : "CoolSpots" %></title>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application", :async => true %>
   </head>
   <body>
 
