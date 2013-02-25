@@ -1,4 +1,8 @@
-<div class="span12">
-<h1><%= @spot.name %></h1>
-<%= image_tag @spot.photo_url, :width => 400 %>
+<div class="span3" style="padding-top: 15px">
+  <%= image_tag @spot.photo_url, :width => 400 %>
+</div>
+<div class="span7">
+  <h1><%= @spot.name %></h1>
+  
+  <%= @spot.description%>
 </div>

@@ -1,6 +1,6 @@
 <div class="span12">
 <h2 style="margin-bottom: 20px"><%= @guide.name %></h2>
-
+<h3><%= @guide.votes.count %> votes</h3>
 <% @guide.spots.each do |spot| %>
 <div class="row" style="margin-bottom: 20px">
   <div class="span2">
