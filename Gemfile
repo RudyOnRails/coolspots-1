@@ -9,6 +9,8 @@ gem 'better_errors' # more useful error pages
 gem 'heroku'
 gem 'thin'
 
+gem 'librato-rails'
+
 
 group :assets do
   gem 'uglifier' # compress javascript
