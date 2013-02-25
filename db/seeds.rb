@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-1000.times do
+100.times do
   first_name = Forgery(:name).first_name
   last_name = Forgery(:name).last_name
   city = Forgery(:address).city
