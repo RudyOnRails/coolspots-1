@@ -11,6 +11,7 @@ gem 'thin'
 
 gem 'librato-rails'
 gem 'newrelic_rpm'
+gem 'heroku-deflater'
 
 group :assets do
   gem 'uglifier' # compress javascript

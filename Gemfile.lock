@@ -76,6 +76,8 @@ GEM
       netrc (~> 0.7.1)
       rest-client (~> 1.6.1)
       rubyzip
+    heroku-deflater (0.4.0)
+      rack (~> 1.4.5)
     hike (1.2.1)
     httpauth (0.2.0)
     i18n (0.6.1)
@@ -197,6 +199,7 @@ DEPENDENCIES
   fog
   forgery
   heroku
+  heroku-deflater
   jquery-rails
   librato-rails
   newrelic_rpm
