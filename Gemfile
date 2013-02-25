@@ -10,7 +10,7 @@ gem 'heroku'
 gem 'thin'
 
 gem 'librato-rails'
-
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'uglifier' # compress javascript
