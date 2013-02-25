@@ -6,8 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+count = ENV['COUNT'] ? ENV['COUNT'].to_i : 100
 
-100.times do
+count.times do
   first_name = Forgery(:name).first_name
   last_name = Forgery(:name).last_name
   city = Forgery(:address).city
