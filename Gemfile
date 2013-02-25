@@ -8,6 +8,7 @@ gem "forgery" # faking data
 gem 'better_errors' # more useful error pages
 gem 'heroku'
 gem 'thin'
+gem 'turbolinks'
 
 gem 'librato-rails'
 gem 'newrelic_rpm'
