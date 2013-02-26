@@ -37,6 +37,8 @@ GEM
       erubis (>= 2.7.0)
     bootstrap_forms (2.0.8)
     builder (3.0.4)
+    bullet (4.3.0)
+      uniform_notifier
     carousel (1.0.0)
       compass
       jquery-rails
@@ -83,8 +85,6 @@ GEM
       netrc (~> 0.7.1)
       rest-client (~> 1.6.1)
       rubyzip
-    heroku-deflater (0.4.0)
-      rack (~> 1.4.5)
     hike (1.2.1)
     httpauth (0.2.0)
     i18n (0.6.1)
@@ -132,8 +132,6 @@ GEM
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
-    rack-mini-profiler (0.1.23)
-      rack (>= 1.1.3)
     rack-ssl (1.3.3)
       rack
     rack-test (0.6.2)
@@ -198,6 +196,7 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    uniform_notifier (1.1.1)
 
 PLATFORMS
   ruby
@@ -205,18 +204,17 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   bootstrap_forms
+  bullet
   carousel
   carrierwave
   fog
   forgery
   heroku
-  heroku-deflater
   jquery-rails
   librato-rails
   newrelic_rpm
   pg
   quiet_assets
-  rack-mini-profiler
   rails (= 3.2.12)
   sorcery
   therubyracer

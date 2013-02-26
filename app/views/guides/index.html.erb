@@ -12,7 +12,9 @@
     </div>
   </div>
   <div class="row" style="margin-top: 10px">
+    <% Rack::MiniProfiler.step 'spots on guides' do %>
     <%= render guide.spots %>
+    <% end %>
   </div>
 <% end %>
 

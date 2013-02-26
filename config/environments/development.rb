@@ -2,10 +2,18 @@ CoolSpots::Application.configure do
   config.cache_classes = false
   
   config.whiny_nils = false
-  config.perform_caching = true
   config.consider_all_requests_local       = true
-  #config.action_controller.perform_caching = true
 
+  config.action_controller.perform_caching = true
+  config.action_dispatch.rack_cache =  {:metastore=>"rails:/",
+                                        :entitystore=>"rails:/",
+                                        :verbose=>true}
+  
+  config.after_initialize do
+    Bullet.enable = true
+    Bullet.bullet_logger = true
+  end
+  
   config.action_mailer.raise_delivery_errors = false
 
   config.log_level = :debug

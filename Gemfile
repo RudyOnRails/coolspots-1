@@ -9,12 +9,13 @@ gem 'better_errors' # more useful error pages
 gem 'heroku'
 gem 'thin'
 gem 'turbolinks'
+gem 'bullet'
 
-gem 'rack-mini-profiler'
+#gem 'rack-mini-profiler'
 
 gem 'librato-rails'
 gem 'newrelic_rpm'
-gem 'heroku-deflater'
+#gem 'heroku-deflater'
 
 group :assets do
   gem 'uglifier' # compress javascript
