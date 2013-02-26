@@ -10,6 +10,8 @@ gem 'heroku'
 gem 'thin'
 gem 'turbolinks'
 
+gem 'rack-mini-profiler'
+
 gem 'librato-rails'
 gem 'newrelic_rpm'
 gem 'heroku-deflater'
