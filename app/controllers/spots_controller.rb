@@ -15,7 +15,8 @@ class SpotsController < ApplicationController
 
   def show    
     @spot = Spot.find(params[:id])
-    fresh_when @spot
+    # expires_in 10.seconds, :public => true
+    # fresh_when @spot
   end
 
   def new
