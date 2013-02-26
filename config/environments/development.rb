@@ -5,11 +5,14 @@ CoolSpots::Application.configure do
   config.consider_all_requests_local       = true
 
   config.action_controller.perform_caching = true
-  config.action_dispatch.rack_cache =  {:metastore=>"rails:/",
-                                        :entitystore=>"rails:/",
-                                        :verbose=>true}
   
-  config.after_initialize do
+  config.action_dispatch.rack_cache = {
+    :metastore    => Dalli::Client.new,
+    :entitystore  => Dalli::Client.new,
+    :allow_reload => false
+  }
+  
+    config.after_initialize do
     Bullet.enable = true
     Bullet.bullet_logger = true
   end

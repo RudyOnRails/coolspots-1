@@ -11,4 +11,5 @@ class Guide < ActiveRecord::Base
   def self.random
     all.sample
   end
+  
 end

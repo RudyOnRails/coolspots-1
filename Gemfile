@@ -10,8 +10,10 @@ gem 'heroku'
 gem 'thin'
 gem 'turbolinks'
 gem 'bullet'
-
-#gem 'rack-mini-profiler'
+gem 'cache_digests'
+gem 'rack-mini-profiler'
+gem 'dalli'
+gem 'memcachier'
 
 gem 'librato-rails'
 gem 'newrelic_rpm'
