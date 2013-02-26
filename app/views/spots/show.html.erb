@@ -1,8 +1,9 @@
 <div class="span3" style="padding-top: 15px">
-  <%= image_tag @spot.photo_url, :width => 400 %>
+  <%= image_tag @spot.photo_url, :width => 400 %><br />
+  <p style="margin-top: 8px">Added by <%= @spot.user.first_name %></p>
 </div>
 <div class="span7">
   <h1><%= @spot.name %></h1>
   
-  <%= @spot.description%>
+  <%= @spot.description %>
 </div>
