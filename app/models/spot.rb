@@ -1,5 +1,5 @@
 class Spot < ActiveRecord::Base
-  attr_accessible :name, :phone, :address, :city, :postcode, :photo, :user_id, :description
+  attr_accessible :name, :phone, :address, :city, :postcode, :photo, :user_id, :description, :votes_count
   mount_uploader :photo, SpotUploader
   
   belongs_to :user

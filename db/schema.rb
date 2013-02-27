@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130227210532) do
+ActiveRecord::Schema.define(:version => 20130227221703) do
 
   create_table "guide_spots", :force => true do |t|
     t.integer  "guide_id"
@@ -51,8 +51,8 @@ ActiveRecord::Schema.define(:version => 20130227210532) do
   end
 
   create_table "spots", :force => true do |t|
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
     t.string   "address"
     t.string   "city"
     t.string   "postcode"
@@ -61,6 +61,7 @@ ActiveRecord::Schema.define(:version => 20130227210532) do
     t.string   "photo"
     t.text     "description"
     t.integer  "user_id"
+    t.integer  "votes_count", :default => 0
   end
 
   create_table "system_metrics", :force => true do |t|
