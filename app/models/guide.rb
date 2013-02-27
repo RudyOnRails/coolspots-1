@@ -1,5 +1,5 @@
 class Guide < ActiveRecord::Base
-  attr_accessible :name, :user_id, :location_id
+  attr_accessible :name, :user_id, :location_id, :votes_count
   belongs_to :user
   belongs_to :location
   

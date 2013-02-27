@@ -1,7 +1,7 @@
 class GuidesController < ApplicationController
 
   def index
-    @guides = Guide.limit(100)
+    @guides = Guide.limit(100).includes(:spots, :user).select("spots.name")
   end
 
   # GET /guides/1
