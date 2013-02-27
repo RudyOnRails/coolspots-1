@@ -6,9 +6,7 @@ class GuidesController < ApplicationController
 
   # GET /guides/1
   # GET /guides/1.json
-  def show
-    expires_in 20.minutes
-    
+  def show    
     @guide = Guide.find(params[:id])
 
     respond_to do |format|

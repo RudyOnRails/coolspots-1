@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.12'
+gem 'ruby-prof'
 
 gem 'turbo-sprockets-rails3' # speed up deploys
 gem 'pg' # postgresql database adapter
